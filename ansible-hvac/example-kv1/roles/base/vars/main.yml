@@ -1,0 +1,7 @@
+---
+
+# Variables
+#
+# # Vault
+#debug:
+prod_db: "{{ lookup('hashi_vault', 'secret=kv-v1/serverlab/production/db token=ce9c4734-4c71-971c-57d7-f5cd7240e860 url=https://127.0.0.1:8200 validate_certs=False')}}"

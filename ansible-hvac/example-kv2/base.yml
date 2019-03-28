@@ -1,0 +1,8 @@
+---
+- hosts: 192.168.1.107
+  become: yes
+  vars:
+    ami_profile: base
+    timezone_timezone: Etc/UTC
+  roles:
+    - base

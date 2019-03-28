@@ -1,0 +1,4 @@
+- name: Configure app
+  template: src=etc/config.json.j2 dest=/tmp/config.json owner=root group=root mode=0644
+  with_dict: 
+    - "{{ prod_db }}"
